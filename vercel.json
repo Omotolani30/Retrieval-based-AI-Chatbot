@@ -1,19 +1,13 @@
 {
   "version": 2,
-  "builds": [
+  "rewrites": [
     {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "destination": "/index.js"
+      "source": "/api/(.*)",
+      "destination": "server/index.js"
     },
     {
-      "src": "/chat",
-      "destination": "/index.js"
+      "source": "/chat",
+      "destination": "server/index.js"
     }
   ]
 }

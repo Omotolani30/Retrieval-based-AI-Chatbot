@@ -29,7 +29,7 @@ const handleChat = (req, res) => {
 };
 
 app.post("/chat", handleChat);
-app.post("/api/chat", handleChat); // Fallback mapping for Vercel rewrite standards
+app.post("/api/chat", handleChat); 
 
 const PORT = process.env.PORT || 5000;
 
